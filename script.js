@@ -3,7 +3,7 @@ const checkBtn = document.getElementById("check-btn");
 const resultElement = document.getElementById("result");
 // let word  = "";
 
-// Add event listener to clear result when input changes
+// Add event listener to clear results when input changes
 
 textInput.addEventListener('input', (e)=>{
     resultElement.innerText = "";
@@ -17,7 +17,7 @@ function regexCleaner(word){
     return word.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
 }
 
-// Function to check if input is a palindrome
+// Function to check if the input is a palindrome
 
 function isPalindrome (word){
     // convert word to lowercase
@@ -30,7 +30,7 @@ function isPalindrome (word){
     
     let reverseCharacters = characters.reverse();
     
-    // join the reverse word back into a string
+    //Join the reverse word back into a string
     let reverseWord = reverseCharacters.join('')
 
     // Compare the original word with the reverse words
